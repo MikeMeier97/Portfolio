@@ -1,14 +1,28 @@
-/* baloo-2-regular - latin */
+/* baloo-bhaina-2-regular - latin */
 @font-face {
-    font-family: 'Baloo 2';
+    font-family: 'Baloo Bhaina 2';
     font-style: normal;
     font-weight: 400;
-    src: url('./baloo-2-v16-latin-regular.eot'); /* IE9 Compat Modes */
+    src: url('./baloo-bhaina-2-v22-latin-regular.eot'); /* IE9 Compat Modes */
     src: local(''),
-         url('./baloo-2-v16-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('./baloo-2-v16-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('./baloo-2-v16-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('./baloo-2-v16-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('./baloo-2-v16-latin-regular.svg#Baloo2') format('svg'); /* Legacy iOS */
+         url('./baloo-bhaina-2-v22-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./baloo-bhaina-2-v22-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./baloo-bhaina-2-v22-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('./baloo-bhaina-2-v22-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./baloo-bhaina-2-v22-latin-regular.svg#BalooBhaina2') format('svg'); /* Legacy iOS */
+  }
+  
+  /* baloo-bhaina-2-800 - latin */
+  @font-face {
+    font-family: 'Baloo Bhaina 2';
+    font-style: normal;
+    font-weight: 800;
+    src: url('./baloo-bhaina-2-v22-latin-800.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('./baloo-bhaina-2-v22-latin-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./baloo-bhaina-2-v22-latin-800.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./baloo-bhaina-2-v22-latin-800.woff') format('woff'), /* Modern Browsers */
+         url('./baloo-bhaina-2-v22-latin-800.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./baloo-bhaina-2-v22-latin-800.svg#BalooBhaina2') format('svg'); /* Legacy iOS */
   }
   
