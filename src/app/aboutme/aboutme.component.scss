@@ -1,0 +1,64 @@
+.aboutmeContent {
+    height: 630px;
+    width: 100vw;
+    max-width: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+}
+.rightColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.textColumn {
+    p{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 24px;
+        line-height: 30px;
+    }
+}
+.titleColumn {
+    h1 {
+        font-family: 'Baloo Bhaina 2', sans-serif;
+        font-size: 120px;
+        line-height: 120px;
+        font-weight: 800;
+        color: #5988FF;
+    }
+}
+button { /* Todo */
+    padding: 12px 30px 12px 30px;
+    color: #5988FF;
+    border-radius: 0.5rem;
+    font-size: 24px;
+    border-style: solid;
+    background-color: white;
+    border-color: #5988FF;
+    &:hover {
+        cursor: pointer;
+        color: white; 
+        animation: hover-animation 0.15s ease-in-out;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes hover-animation {
+    0% {
+        transform: scale(1);
+    }
+    30% {
+        transform: scale(1.2);
+        background: linear-gradient(104.85deg, #5988FF 29.03%, #FFFFFF 33.64%, #FFFFFF 39.44%, #FFFFFF 90.08%);
+    }
+    60% {
+        transform: scale(1.2);
+        background: linear-gradient(104.4deg, #5988FF 9.21%, #5988FF 27.52%, #5988FF 62.24%, #FFFFFF 64.83%, #FFFFFF 67.43%, #FFFFFF 90.18%);
+    }
+    100% {
+        transform: scale(1.2);
+        background: radial-gradient(74.22% 74.22% at 19.79% 22.42%, #5988FF 6.25%, #5988FF 51.56%, #0043F0 100%);
+        border: none;
+    }
+}
