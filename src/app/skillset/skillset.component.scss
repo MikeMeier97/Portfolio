@@ -31,6 +31,49 @@
         margin-top: 12px; 
         font-family: 'Montserrat', sans-serif;
         text-align: center;
+        font-size: 16px;
         color: white; 
+        white-space: nowrap;
+    }
+    &:hover {
+        animation: hover-effekt-text 0.01s ease-in-out;
+        animation-fill-mode: forwards;
+        img {
+            animation-name: hover-effekt-img-out;
+            animation-duration: 0.5s;
+            &:hover  {
+                animation-name: hover-effekt-img-in;
+                animation-duration: 0.3s;
+                animation-fill-mode: forwards;
+                /* TODO */
+            }
+        }
+    }
+}
+
+@keyframes hover-effekt-text{
+    from {
+        font-weight: normal;
+    }
+    to {
+        font-weight: bolder;
+    }
+}
+
+@keyframes hover-effekt-img-in {
+    from{
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes hover-effekt-img-out {
+    from{
+        transform: translateY(-10px);
+    }
+    to {
+        transform: translateY(0px);
     }
 }
