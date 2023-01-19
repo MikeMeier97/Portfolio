@@ -27,9 +27,9 @@
         <img src="../../assets/img/scrollLine.png" alt="Scroll">
     </div>
     <div class="headIcons">
-        <img src="../../assets/icons/githubIcon.png" alt="GitHubIcon">
-        <img src="../../assets/icons/emailIcon.png" alt="EmailIcon">
-        <img src="../../assets/icons/linkedInIcon.png" alt="LinkedInIcon">
+        <img (click)="goToLink('https://github.com/MikeMeier97')" class="pointer" src="../../assets/icons/githubIcon.png" alt="GitHubIcon">
+        <img (click)="mailMe()" class="pointer" src="../../assets/icons/emailIcon.png" alt="EmailIcon">
+        <img (click)="goToLink('https://www.linkedin.com/in/mike-meier-887305231/')" class="pointer" src="../../assets/icons/linkedInIcon.png" alt="LinkedInIcon">
     </div>
   </div>
   <img class="myPicture" src="../../assets/img/myPicture.png" alt="Photo of me ">

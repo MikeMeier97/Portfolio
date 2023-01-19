@@ -82,5 +82,9 @@ nav {
     margin-top: 110px;
     gap: 35px; 
     flex-direction: column;
-    margin-left: 25rem;
+    margin-left: 20vw;
+}
+
+.pointer:hover {
+    cursor: pointer;
 }
