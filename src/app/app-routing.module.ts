@@ -5,9 +5,9 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
 import { SkillsetComponent } from './skillset/skillset.component';
 
 const routes: Routes = [
-  { path: '/', component: HeaderComponent },
-  { path: '/aboutme', component: AboutmeComponent },
-  { path: '/skillset', component : SkillsetComponent }
+  { path: 'home', component: HeaderComponent },
+  { path: 'aboutme', component: AboutmeComponent },
+  { path: 'skillset', component : SkillsetComponent }
 ];
 
 @NgModule({

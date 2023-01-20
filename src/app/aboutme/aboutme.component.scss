@@ -36,10 +36,13 @@ button { /* Todo static */
     border-style: solid;
     background-color: white;
     border-color: #5988FF;
+    animation-name: hover-animation-out;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
     &:hover {
         cursor: pointer;
         color: white; 
-        animation: hover-animation 0.15s ease-in-out;
+        animation: hover-animation-in 0.15s ease-in-out;
         animation-fill-mode: forwards;
     }
 }
@@ -62,7 +65,7 @@ button { /* Todo static */
     left: 70vw;
 }
 
-@keyframes hover-animation {
+@keyframes hover-animation-in {
     0% {
         transform: scale(1);
     }
@@ -78,5 +81,17 @@ button { /* Todo static */
         transform: scale(1.2);
         background: radial-gradient(74.22% 74.22% at 19.79% 22.42%, #5988FF 6.25%, #5988FF 51.56%, #0043F0 100%);
         border: none;
+    }
+}
+@keyframes hover-animation-out {
+    from{
+        background: radial-gradient(74.22% 74.22% at 19.79% 22.42%, #5988FF 6.25%, #5988FF 51.56%, #0043F0 100%);
+        border: none;
+        transform: scale(1.2);
+    }
+    to {
+        transform: scale(1);
+        border: 2px solid #5988FF;
+        background: white;
     }
 }

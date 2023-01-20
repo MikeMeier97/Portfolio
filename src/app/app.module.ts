@@ -7,6 +7,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { SkillsetComponent } from './skillset/skillset.component';
+import { MyworkComponent } from './mywork/mywork.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +16,8 @@ import { SkillsetComponent } from './skillset/skillset.component';
     HeaderComponent,
     AboutmeComponent,
     SkillsetComponent,
+    MyworkComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
