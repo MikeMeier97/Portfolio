@@ -29,6 +29,9 @@ nav {
         font-family: 'Montserrat', sans-serif;
         text-decoration: none;
         color: #5988FF;
+        &:hover {
+            cursor: pointer;
+        }
     }
 }
 .logo {
@@ -83,8 +86,36 @@ nav {
     gap: 35px; 
     flex-direction: column;
     margin-left: 20vw;
+    img {
+        animation-name: side-icons-animation-out;
+        animation-duration: 0.2s;
+        animation-fill-mode: forwards;
+        
+        &:hover {
+            animation-name: side-icons-animation-in;
+            animation-duration: 0.2s;
+            animation-fill-mode: forwards;
+        }
+    }
 }
 
 .pointer:hover {
     cursor: pointer;
+}
+
+@keyframes side-icons-animation-in {
+    from {
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(-10px);
+    }
+}
+@keyframes side-icons-animation-out {
+    from {
+        transform: translateX(-10px);
+    }
+    to{
+        transform: translateX(0px);
+    }
 }
