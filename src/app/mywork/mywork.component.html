@@ -8,7 +8,11 @@
   </div>
   <div class="theWorks">
     <div class="columnWork">
-      <img style="filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.20));" src="../../assets/img/works/join.png" alt="Join" />
+      <img
+        style="filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.2))"
+        src="../../assets/img/works/join.png"
+        alt="Join"
+      />
       <div class="textRight">
         <h1>Join</h1>
         <h3>JavaScipt | HTML | CSS</h3>
@@ -25,25 +29,42 @@
         <h1>Sharkie</h1>
         <h3>JavaScript | HTML | CSS</h3>
         <p>
-          Jump, run and throw game based on object-oriented approach. <br>
-          Help Sharkie to find coins and some bottles to shoot <br>
-          of the endboss. 
+          Jump, run and throw game based on object-oriented approach. <br />
+          Help Sharkie to find coins and some bottles to shoot <br />
+          of the endboss.
         </p>
         <button class="button">GitHub</button>
       </div>
-      <img style="margin-right: 200px; filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.30));" src="../../assets/img/works/sharkie.png" alt="Sharkie" />
+      <img
+        style="
+          margin-right: 200px;
+          filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.3));
+        "
+        src="../../assets/img/works/sharkie.png"
+        alt="Sharkie"
+      />
     </div>
     <div class="columnWork">
-      <img style="filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.30));" src="../../assets/img/works/ringoffire.png" alt="RingOfFire" />
+      <img
+        style="filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.3))"
+        src="../../assets/img/works/ringoffire.png"
+        alt="RingOfFire"
+      />
       <div class="textRight">
         <h1>Ring of fire</h1>
         <h3>Angular | TypeScript | HTML | CSS | Firebase</h3>
         <p>
-        A card game based on the ring of fire drinking game. <br>
-        Play it online with your friends and win.
+          A card game based on the ring of fire drinking game. <br />
+          Play it online with your friends and win.
         </p>
         <button class="button">GitHub</button>
       </div>
     </div>
   </div>
+  <img
+    *ngFor="let i of bubbles; let index = index;"
+    id="bubble{{index}}"
+    src="../../assets/img/bubbles/bubble.png"
+    alt="Bubble"
+  />
 </div>
