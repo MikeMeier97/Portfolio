@@ -1,5 +1,5 @@
 .myworkContent {
-    padding: 120px 0px 0px 120px;
+    padding: 100px 0px 0px 120px;
     width: 100vw;
     max-width: 100%;
 }
@@ -18,14 +18,22 @@
     }
 }
 .columnWork{
-    margin-top: 140px;
+    margin-top: 150px;
     width: 100vw;
     display: flex; 
     justify-content: space-between;
     gap: 90px;
     img {
+        animation-name: hover-img-out;
+        animation-duration: 0.2s;
+        animation-fill-mode: forwards;
         width: 620px;
         height: 393px;
+        &:hover {
+            animation-name: hover-img-in;
+            animation-duration: 0.2s;
+            animation-fill-mode: forwards;
+        }
     }
 }
 .textRight {
@@ -106,16 +114,6 @@ button{
         cursor: pointer;
     }
 }
-img {
-    animation-name: hover-img-out;
-    animation-duration: 0.2s;
-    animation-fill-mode: forwards;
-    &:hover {
-        animation-name: hover-img-in;
-        animation-duration: 0.2s;
-        animation-fill-mode: forwards;
-    }
-}
 @keyframes hover-animation-button-in {
     0% {
         transform: scale(1);
@@ -165,10 +163,19 @@ img {
     }
 }
 
-#bubble1 {
-    width: 110px;
-    height: auto; 
-    position: relative;
-    bottom: 0px; 
-     
+.bubbleByTitle {
+   width: 110px;
+   height: 110px; 
+   margin-left: 500px; 
+}
+
+.bubbleByText {
+    width: 180px;
+    height: 180px;
+    margin-left: 40vw; 
+    margin-right: 200px; 
+}
+#bubble1{
+    /*todo */
+    width: 2vw;
 }
