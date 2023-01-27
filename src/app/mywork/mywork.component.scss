@@ -23,17 +23,18 @@
     display: flex; 
     justify-content: space-between;
     gap: 90px;
-    img {
-        animation-name: hover-img-out;
+}
+.workIMG {
+    animation-name: hover-img-out;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    width: 620px;
+    height: 393px;
+    z-index: 2;
+    &:hover {
+        animation-name: hover-img-in;
         animation-duration: 0.2s;
         animation-fill-mode: forwards;
-        width: 620px;
-        height: 393px;
-        &:hover {
-            animation-name: hover-img-in;
-            animation-duration: 0.2s;
-            animation-fill-mode: forwards;
-        }
     }
 }
 .textRight {
@@ -173,9 +174,48 @@ button{
     width: 180px;
     height: 180px;
     margin-left: 40vw; 
-    margin-right: 200px; 
+    margin-right: 20vw; 
 }
 #bubble1{
-    /*todo */
-    width: 2vw;
+    transform: rotate(81.57deg); /* TODO animation */ 
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 2800px;
+}
+.bubbleByJoin {
+ /* TODO animation */ 
+    width: 400px;
+    height: 400px; 
+    position: absolute;
+    top: 3000px; 
+    left: -150px;
+    z-index: -1;
+    float: left;
+    object-fit: cover;
+    transform: rotate(81.57deg);
+}
+.bubbleBySharkie {
+    width: 650px;
+    height: 650px; 
+    position: absolute;
+    top: 3300px; 
+    z-index: -1;
+    left: 75vw;
+}
+
+.bubbleBySharkieSmall {
+    width: 50px;
+    height: 50px; 
+    position: absolute;
+    top: 3700px; 
+    left: 200px; 
+}
+.bubbleByROF {
+    width: 240px;
+    height: 240px; 
+    position: absolute;
+    top: 4100px;
+    left: 200px; 
+    z-index: 1; 
 }

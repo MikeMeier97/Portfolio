@@ -1,18 +1,32 @@
 <div class="myworkContent">
-  <img class="bubbleByTitle" src="../../assets/img/bubbles/bubble.png" alt="Bubble">
+  <img
+    class="bubbleByTitle"
+    src="../../assets/img/bubbles/bubble.png"
+    alt="Bubble"
+  />
   <div class="title">
     <h1>My work</h1>
-    <div style="display: flex;">
-    <p style="white-space: nowrap;">
-      This page is a sample of my work - please feel free to try <br />
-      them out.
-    </p>
-    <img class="bubbleByText" src="../../assets/img/bubbles/bubble.png" alt="Bubble">
-  </div>
+    <div style="display: flex">
+      <p style="white-space: nowrap">
+        This page is a sample of my work - please feel free to try <br />
+        them out.
+      </p>
+      <img
+        class="bubbleByText"
+        src="../../assets/img/bubbles/bubble.png"
+        alt="Bubble"
+      />
+    </div>
   </div>
   <div class="theWorks">
-    <div style="margin-top: 30px; " class="columnWork">
+    <div style="margin-top: 30px" class="columnWork">
       <img
+        class="bubbleByJoin"
+        src="../../assets/img/bubbles/bubbleBIG.png"
+        alt="Bubble"
+      />
+      <img
+        class="workIMG"
         style="filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.2))"
         src="../../assets/img/works/join.png"
         alt="Join"
@@ -38,8 +52,19 @@
           of the endboss.
         </p>
         <button class="button">GitHub</button>
+        <img
+          class="bubbleBySharkie"
+          src="../../assets/img/bubbles/bubbleBIG.png"
+          alt="Bubble"
+        />
+        <img
+          class="bubbleBySharkieSmall"
+          src="../../assets/img/bubbles/bubble.png"
+          alt="Bubble"
+        />
       </div>
       <img
+        class="workIMG"
         style="
           margin-right: 200px;
           filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.3));
@@ -50,6 +75,7 @@
     </div>
     <div class="columnWork">
       <img
+        class="workIMG"
         style="filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.3))"
         src="../../assets/img/works/ringoffire.png"
         alt="RingOfFire"
@@ -62,13 +88,12 @@
           Play it online with your friends and win.
         </p>
         <button class="button">GitHub</button>
+        <img
+          class="bubbleByROF"
+          src="../../assets/img/bubbles/bubbleBIG.png"
+          alt="Bubble"
+        />
       </div>
     </div>
   </div>
-  <img
-    *ngFor="let i of bubbles; let index = index;"
-    id="bubble{{index}}"
-    src="../../assets/img/bubbles/bubble.png"
-    alt="Bubble"
-  />
 </div>
