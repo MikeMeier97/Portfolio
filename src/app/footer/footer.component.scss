@@ -1,4 +1,37 @@
 footer {
-    height: 300px; 
-    background: radial-gradient(71.18% 335.57% at 28.82% -124.4%, #5988FF 6.25%, #5988FF 51.56%, #0043F0 100%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+  background: radial-gradient(
+    71.18% 335.57% at 28.82% -124.4%,
+    #5988ff 6.25%,
+    #5988ff 51.56%,
+    #0043f0 100%
+  );
+}
+.icons {
+    img {
+        padding-right: 42px;
+    }
+}
+#iconFooter {
+  width: 64px;
+  height: 69px;
+  padding-right: 110px; 
+}
+.text {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+    font-family: 'Montserrat', sans-serif;
+    p{
+        font-size: 23px;
+        color: white; 
+    }
+}
+#impressum {
+    font-size: 16px;
 }
