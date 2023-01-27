@@ -52,9 +52,8 @@ form {
 }
 .textField {
     border-radius: 10px;
-    border-style: solid; 
+    border: 1px solid #5988FF;
     font-family: 'Montserrat', sans-serif;
-    border-color: #5988FF; 
     animation-name: textfield-hover-out;
     animation-duration: 80ms;
     animation-fill-mode: forwards;
@@ -90,6 +89,7 @@ button{
 }
 
 textarea{
+    outline-color: #04060ab0; 
     margin: 0;
     background: #e9e9e900;
 }
@@ -119,21 +119,21 @@ textarea{
 }
 @keyframes textfield-hover-in {
     from {
-        border-width: 1px;
+        outline: none;
         }
     to {
-        border-width: 2px;
-        
+        outline: auto; 
+        border-color: #5988FF00; 
     }
 }
 
 @keyframes textfield-hover-out {
     from {
-        border-width: 2px;
+        outline: auto;
+        border-color: #5988FF00; 
         }
     to {
-        border-width: 1px;
-        
+        outline: none; 
     }
 }
 
