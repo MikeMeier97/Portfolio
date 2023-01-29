@@ -12,19 +12,19 @@
   <form (submit)="sendMail()" ngNativeValidate #myForm>
     <!-- TODO STYLE -->
     <textarea
-      style="resize: none"
       class="textField"
       name="name"
       #name
+      id="name"
       required
       type="text"
       placeholder="Your name"
     ></textarea>
     <textarea
-      style="resize: none"
       class="textField"
       name=""
       type="email"
+      id="email"
       #email
       required
       placeholder="Your email"
