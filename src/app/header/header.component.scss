@@ -1,4 +1,3 @@
-
 .headContent {
   overflow-x: hidden;
   height: 100vh;
@@ -99,7 +98,6 @@ nav {
     animation-name: side-icons-animation-out;
     animation-duration: 0.2s;
     animation-fill-mode: forwards;
-
     &:hover {
       animation-name: side-icons-animation-in;
       animation-duration: 0.2s;
@@ -214,8 +212,72 @@ nav {
     width: 90vw;
   }
 }
+@media(max-width: 450px) {
+  .headTitle {
+    h3 {
+      font-size: 40px;
+    }
+    h1 {
+      font-size: 72px;
+    }
+  }
+}
 @media(max-width: 600px) {
     .headBubble {
         width: 600px;
     }
+}
+@media(max-width: 500px) {
+  .headBubble {
+    width: 550px;
+  }
+}
+@media(max-width: 470px) {
+  .headBubble {
+    width: 550px;
+  }
+}
+@media(max-width: 420px) {
+  .headBubble {
+    width: 500px;
+  }
+}
+@media(max-width: 400px) {
+  .headBubble {
+    width: 480px;
+  }
+  .headTitle {
+    h3 {
+      font-size: 32px;
+    }
+    h1 {
+      font-size: 64px;
+    }
+  }
+}
+@media (max-width: 360px) {
+  .headBubble {
+    width: 460px;
+  }
+}
+@media(max-height: 860px) {
+  .scroll {
+    height: 100px;
+  }
+}
+@media(max-height: 750px) {
+  .scrollAndIcons {
+    height: 200px;
+  }
+  .headIcons {
+    margin-top: 20px;
+  }
+}
+@media(max-height: 650px) {
+  .headIcons {
+    margin-left: 22vw;
+  }
+  .scroll {
+    display: none; 
+  }
 }
