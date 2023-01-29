@@ -9,29 +9,35 @@
     </p>
     <p class="subtext">Need a Frontend developer? <b>Contact me!</b></p>
   </div>
-  <form action="">
+  <form (submit)="sendMail()" ngNativeValidate #myForm>
     <!-- TODO STYLE -->
     <textarea
       style="resize: none"
       class="textField"
-      name=""
-      id="name"
+      name="name"
+      #name
+      required
+      type="text"
       placeholder="Your name"
     ></textarea>
     <textarea
       style="resize: none"
       class="textField"
       name=""
-      id="email"
+      type="email"
+      #email
+      required
       placeholder="Your email"
     ></textarea>
     <textarea
       class="textField"
-      name=""
+      name="message"
+      #message
+      required
       id="message"
       placeholder="Your message"
     ></textarea>
-    <button>Say hello ;)</button>
+    <button #sendButton>Say hello ;)</button>
   </form>
   <img
     class="bubbleByContactBig"
