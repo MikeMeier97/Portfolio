@@ -1,14 +1,23 @@
-footer {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 300px;
+.footerBackground {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  width: 100vw !important;
+  max-width: 100%;
   background: radial-gradient(
     71.18% 335.57% at 28.82% -124.4%,
     #5988ff 6.25%,
     #5988ff 51.56%,
     #0043f0 100%
   );
+  height: 300px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 300px;
 }
 .icons {
     img {

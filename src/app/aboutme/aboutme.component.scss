@@ -1,14 +1,21 @@
+.aboutmeBackground {
+  position: absolute;
+  width: 100vw;
+  max-width: 100%;
+  z-index: 0;
+  left: 0;
+  background-color: #ffffff;
+  height: 630px;
+}
 .aboutmeContent {
   height: 630px;
   width: 100vw;
   max-width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 75px;
   z-index: 1;
   position: relative;
-  background-color: #ffffff;
 }
 .rightColumn {
   display: flex;
@@ -188,24 +195,30 @@ button {
     width: 80vw;
   }
 }
-@media(max-width: 500px) {
-  .aboutmeContent {
-    padding-top: 100px;
-  }
-    .titleColumn {
-        h1 {
-            font-size: 80px;
-            line-height: 80px;
-        }
-    }
-    .textColumn {
-      margin-top: 0px;
-        p {
-            font-size: 18px;
-        }
-    }
+@media (max-width: 550px) {
+
 }
-@media (max-width: 400px) {
+@media (max-width: 550px) {
+  .titleColumn {
+    h1 {
+      font-size: 80px;
+      line-height: 80px;
+    }
+  }
+  .aboutmeContent {
+    padding-top: 150px;
+  }
+  .textColumn {
+    margin-top: 0px;
+    p {
+      font-size: 18px;
+    }
+  }
+}
+@media (max-width: 450px) {
+  .aboutmeContent {
+    justify-content: center;
+  }
   .titleColumn {
     h1 {
       font-size: 70px;
@@ -217,9 +230,6 @@ button {
     p {
       font-size: 14px;
     }
-  }
-  .aboutmeContent {
-    padding-top: 120px;
   }
 }
 @media (max-width: 350px) {

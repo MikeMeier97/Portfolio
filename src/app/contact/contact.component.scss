@@ -1,3 +1,12 @@
+.contactBackground {
+    width: 100vw !important;
+    max-width: 100%;
+    position: absolute;
+    left: 0; 
+    height: 900px; 
+    background: linear-gradient(179.99deg, #FFFFFF 12.89%, #e9e9e9 80.39%); 
+
+}
 .text {
     z-index: 1;
     margin-right: 50px;
@@ -21,12 +30,10 @@
     }
 }
 .contactContext {
-    padding-left: 92px;
     padding-top: 180px;
     padding-bottom: 180px; 
     display: flex;
     justify-content: space-between;
-    background: linear-gradient(179.99deg, #FFFFFF 12.89%, #e9e9e9 80.39%);
     position: relative;
 }
 .subtext {
@@ -39,7 +46,6 @@ form {
     gap: 35px;
     flex-direction: column;
     align-items: center;  
-    margin-right: 10vw;
 }
 #message {    
     padding: 10px 30vw 140px 20px;
