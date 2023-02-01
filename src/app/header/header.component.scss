@@ -27,6 +27,8 @@
   display: flex;
   justify-content: space-between;
   z-index: 1;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 nav {
   font-size: 24px;
@@ -49,7 +51,7 @@ nav {
 }
 .headTitle {
   position: relative;
-  left: 45vw;
+  left: 50vw;
   top: 15%;
   h3 {
     font-family: "Montserrat", sans-serif;
@@ -83,7 +85,9 @@ nav {
   position: absolute;
   bottom: 0;
   left: 66vw;
+  width: 29vw;
   display: flex;
+  justify-content: space-between;
   p {
     font-family: "Montserrat", sans-serif;
     color: #5988ff;
@@ -100,7 +104,6 @@ nav {
   margin-top: 110px;
   gap: 35px;
   flex-direction: column;
-  margin-left: 20vw;
   img {
     animation-name: side-icons-animation-out;
     animation-duration: 0.2s;
@@ -145,6 +148,10 @@ nav {
       padding-top: 30px;
     }
   }
+  .scrollAndIcons {
+    left: 70vw;
+    width: 26vw;
+  }
 }
 
 @media (max-width: 1600px) {
@@ -169,7 +176,7 @@ nav {
     font-size: 18px;
   }
   .headTitle {
-    left: 60vw;
+    left: 58vw;
     h3 {
       font-size: 42px;
     }

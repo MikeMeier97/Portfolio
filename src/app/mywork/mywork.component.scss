@@ -1,9 +1,12 @@
 .myworkContent {
-    padding-top: 100px;
+    padding-top: 50px;
+    margin-left: 5vw;
+    margin-right: 5vw;
     width: 100vw;
     max-width: 100%;
 }
 .title {
+    margin-top: 100px;
     h1 {
         font-family: 'Baloo Bhaina 2', sans-serif;
         font-size: 96px;
@@ -167,7 +170,9 @@ button{
 .bubbleByTitle {
    width: 110px;
    height: 110px; 
-   margin-left: 500px; 
+   float: right;
+   margin-top: 20px;
+   margin-right: 40vw; 
 }
 
 .bubbleByText {
@@ -213,6 +218,136 @@ button{
     z-index: 1; 
 }
 
-@media (max-width: 1500px) {
-
+@media (max-width: 1200px) {
+    .workIMG {
+        width: 500px;
+        height: 316px;
+    }
+    .bubbleBySharkie {
+        top: 3200px;
+    }
+    .bubbleByJoin {
+        top: 2900px;
+    }
+    .textRight {
+        h1 {
+            font-size: 38px;
+        }
+        h3 {
+            font-size: 18px;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+    .textLeft {
+        h1 {
+            font-size: 38px;
+        }
+        h3 {
+            font-size: 18px;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+}
+@media (max-width: 1100px) {
+    .columnWork {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        width: 90vw;
+    }
+    .textRight {
+        width: 460px;
+        margin-right: 0;  
+        text-align: center;
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        h1 {
+            font-size: 64px;
+            margin-bottom: 30px;
+        }
+        h3 {
+            font-size: 28px;
+            margin-bottom: 30px;
+            line-height: 35px;
+        }
+        p {
+            font-size: 18px;
+        }
+    }
+    .workIMG {
+        width: 60vw;
+        height: auto;
+    }
+}
+@media (max-width: 900px) {
+    .bubbleByTitle {
+        width: 45px;
+        height: 45px;
+    }
+    .bubbleByText {
+        width: 70px;
+        height: 70px;
+        margin-top: 50px;
+        float: right;
+    }
+}
+@media (max-width: 600px) {
+    .title {
+        p {
+            font-size: 12px;
+        }
+    }
+    .textRight {
+        h1 {
+            font-size: 52px;
+            margin-bottom: 10px;
+        }
+        h3 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            line-height: 35px;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+}
+@media (max-width: 700px) {
+    .title {
+        h1 {
+            font-size: 82px;
+        }
+        p {
+            font-size: 18px;
+        }
+    }
+}
+@media (max-width: 500px) {
+    .textRight {
+        width: 80vw;
+        h1 {
+            font-size: 42px;
+        }
+        h3 {
+            font-size: 18px;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+}
+@media (max-width: 420px) {
+    .title {
+        h1 {
+            font-size: 70px;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
 }

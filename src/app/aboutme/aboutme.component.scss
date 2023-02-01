@@ -8,9 +8,11 @@
   height: 630px;
 }
 .aboutmeContent {
+  margin-left: 5vw;
+  margin-right: 5vw;
   height: 630px;
-  width: 100vw;
-  max-width: 100%;
+  width: 90vw;
+  max-width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -196,9 +198,6 @@ button {
   }
 }
 @media (max-width: 550px) {
-
-}
-@media (max-width: 550px) {
   .titleColumn {
     h1 {
       font-size: 80px;
@@ -232,7 +231,7 @@ button {
     }
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 390px) {
   .titleColumn {
     h1 {
       font-size: 60px;

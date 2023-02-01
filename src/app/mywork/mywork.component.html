@@ -6,9 +6,9 @@
   />
   <div class="title">
     <h1>My work</h1>
-    <div style="display: flex; justify-content: space-between;">
+    <div style="display: flex; justify-content: space-between">
       <p style="white-space: nowrap">
-        This page is a sample of my work - please feel free to try <br />
+        This page is a sample of my work - please  <ng-template [ngIf]="innerWidth < 550"><br /></ng-template> feel free to try <ng-template [ngIf]="innerWidth > 550"><br /></ng-template>
         them out.
       </p>
       <img
@@ -35,23 +35,48 @@
         <h1>Join</h1>
         <h3>JavaScipt | HTML | CSS</h3>
         <p>
-          Task manager inspired by the Kanban System. Create and <br />
-          organize tasks using drag and drop functions, assign user and <br />
+          Task manager inspired by the Kanban System. Create and 
+          organize tasks using drag and drop functions, assign user and 
           categories.
         </p>
         <button class="button">GitHub</button>
       </div>
     </div>
-    <div class="columnWork">
-      <div class="textLeft">
-        <h1>Sharkie</h1>
-        <h3>JavaScript | HTML | CSS</h3>
-        <p>
-          Jump, run and throw game based on object-oriented approach. <br />
-          Help Sharkie to find coins and some bottles to shoot <br />
-          of the endboss.
-        </p>
-        <button class="button">GitHub</button>
+    <ng-template [ngIf]="innerWidth > 1100">
+      <div class="columnWork">
+        <div class="textLeft">
+          <h1>Sharkie</h1>
+          <h3>JavaScript | HTML | CSS</h3>
+          <p>
+            Jump, run and throw game based on object-oriented approach. 
+            Help Sharkie to find coins and some bottles to shoot 
+            of the endboss.
+          </p>
+          <button class="button">GitHub</button>
+          <img
+            class="bubbleBySharkie"
+            src="../../assets/img/bubbles/bubbleBIG.png"
+            alt="Bubble"
+          />
+          <img
+            class="bubbleBySharkieSmall"
+            src="../../assets/img/bubbles/bubble.png"
+            alt="Bubble"
+          />
+        </div>
+        <img
+          class="workIMG"
+          style="
+            margin-right: 200px;
+            filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.3));
+          "
+          src="../../assets/img/works/sharkie.png"
+          alt="Sharkie"
+        />
+      </div>
+    </ng-template>
+    <ng-template [ngIf]="innerWidth < 1100">
+      <div class="columnWork">
         <img
           class="bubbleBySharkie"
           src="../../assets/img/bubbles/bubbleBIG.png"
@@ -62,17 +87,24 @@
           src="../../assets/img/bubbles/bubble.png"
           alt="Bubble"
         />
+        <img
+          class="workIMG"
+          style="filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.3))"
+          src="../../assets/img/works/sharkie.png"
+          alt="Sharkie"
+        />
+        <div class="textRight">
+          <h1>Sharkie</h1>
+          <h3>JavaScript | HTML | CSS</h3>
+          <p>
+            Jump, run and throw game based on object-oriented approach. 
+            Help Sharkie to find coins and some bottles to shoot 
+            of the endboss.
+          </p>
+          <button class="button">GitHub</button>
+        </div>
       </div>
-      <img
-        class="workIMG"
-        style="
-          margin-right: 200px;
-          filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.3));
-        "
-        src="../../assets/img/works/sharkie.png"
-        alt="Sharkie"
-      />
-    </div>
+    </ng-template>
     <div class="columnWork">
       <img
         class="workIMG"
@@ -84,7 +116,7 @@
         <h1>Ring of fire</h1>
         <h3>Angular | TypeScript | HTML | CSS | Firebase</h3>
         <p>
-          A card game based on the ring of fire drinking game. <br />
+          A card game based on the ring of fire drinking game.
           Play it online with your friends and win.
         </p>
         <button class="button">GitHub</button>
