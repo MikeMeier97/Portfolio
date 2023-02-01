@@ -20,7 +20,13 @@
     display: flex;
     padding-left: 10vw;
 }
-
+.lastBox {
+    margin-right: 0 !important;
+}
+.firebase{
+    width: 55px;
+    height: 75px;
+}
 .box {
     margin-right: 10vw;
     width: 70px;
@@ -75,5 +81,49 @@
     }
     to {
         transform: translateY(0px);
+    }
+}
+@media(max-width: 800px) {
+    .skillsetContent {
+        height: 720px;
+        padding-top: 0px;
+        h1 {
+            font-size: 64px;
+            margin-top: 50px;
+            padding-bottom: 20px; 
+        }
+    }
+    .box {
+        margin-top: 30px;
+        img {
+            width: 60px;
+        }
+    }
+    .iconColumn {
+        width: 80vw;
+        justify-content: space-around;
+    }
+    .firebase{
+        width: 55px;
+        height: 65px;
+    }
+}
+@media(max-width: 400px) {
+    .iconColumn{
+        padding-left: 20px;
+    }
+    .box {
+        max-width: 50px;
+        margin-right: 20px;
+        img {
+            width: 50px;
+        }
+        p{
+            font-size: 12px;
+        }
+    }
+    .firebase {
+        width: 50px;
+        height: 53px;
     }
 }

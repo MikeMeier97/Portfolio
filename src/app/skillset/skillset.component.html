@@ -1,8 +1,8 @@
 <div class="skillsetContent">
   <h1>Skill set</h1>
-  <div class="icons">
-    <div class="iconColumn">      
-        <div class="box">
+  <ng-template [ngIf]="innerWidth > 800">
+    <div class="iconColumn">
+      <div class="box">
         <img
           class="firstImg"
           src="../../assets/icons/anguarIcon.png"
@@ -42,49 +42,142 @@
         />
         <p>Scrum</p>
       </div>
-
-  </div>
-  <div class="iconColumn" style="margin-top: 63px;">
-    <div class="box">
-      <img style="width: 55px;
-      height: 75px;"
-        class="firstImg"
-        src="../../assets/icons/firebaseIcon.png"
-        alt="Angular"
-      />
-      <p>Firebase</p>
     </div>
-    <div class="box">
-      <img
+    <div class="iconColumn" style="margin-top: 63px">
+      <div class="box">
+        <img
+          class="firstImg firebase"
+          src="../../assets/icons/firebaseIcon.png"
+          alt="Angular"
+        />
+        <p>Firebase</p>
+      </div>
+      <div class="box">
+        <img
+          class="firstImg"
+          src="../../assets/icons/gitIcon.png"
+          alt="Angular"
+        />
+        <p>GIT</p>
+      </div>
+      <div class="box">
+        <img
+          class="firstImg"
+          src="../../assets/icons/cssIcon.png"
+          alt="Angular"
+        />
+        <p>CSS</p>
+      </div>
+      <div class="box">
+        <img
+          class="firstImg"
+          src="../../assets/icons/apiIcon.png"
+          alt="Angular"
+        />
+        <p>Rest-Api</p>
+      </div>
+      <div class="box">
+        <img
+          class="firstImg"
+          src="../../assets/icons/materialIcon.png"
+          alt="Angular"
+        />
+        <p>
+          Material <br />
+          Design
+        </p>
+      </div>
+    </div>
+  </ng-template>
+  <ng-template [ngIf]="innerWidth < 800">
+    <div class="iconColumn">
+      <div class="box">
+        <img
+          class="firstImg"
+          src="../../assets/icons/anguarIcon.png"
+          alt="Angular"
+        />
+        <p>Angular</p>
+      </div>
+      <div class="box">
+        <img
+          class="firstImg"
+          src="../../assets/icons/typescriptIcon.png"
+          alt="Angular"
+        />
+        <p>TypeScript</p>
+      </div>
+      <div class="box">
+        <img
+          class="firstImg"
+          src="../../assets/icons/javascriptIcon.png"
+          alt="Angular"
+        />
+        <p>JavaScript</p>
+      </div>
+    </div>
+    <div class="iconColumn">
+      <div class="box">
+        <img
+          class="firstImg"
+          src="../../assets/icons/htmlIcon.png"
+          alt="Angular"
+        />
+        <p>HTML</p>
+      </div>
+      <div class="box">
+        <img
+          class="firstImg firebase"
+          src="../../assets/icons/firebaseIcon.png"
+          alt="Angular"
+        />
+        <p>Firebase</p>
+      </div>
+      <div class="box">
+        <img
         class="firstImg"
         src="../../assets/icons/gitIcon.png"
         alt="Angular"
       />
       <p>GIT</p>
+      </div>
     </div>
-    <div class="box">
-      <img
-        class="firstImg"
-        src="../../assets/icons/cssIcon.png"
-        alt="Angular"
-      />
-      <p>CSS</p>
-    </div>
-    <div class="box">
-      <img
-        class="firstImg"
-        src="../../assets/icons/apiIcon.png"
-        alt="Angular"
-      />
-      <p>Rest-Api</p>
-    </div>
-    <div class="box">
-      <img
+    <div class="iconColumn">
+      <div class="box">
+        <img
+          class="firstImg"
+          src="../../assets/icons/cssIcon.png"
+          alt="Angular"
+        />
+        <p>CSS</p>
+      </div>
+      <div class="box">
+        <img
         class="firstImg"
         src="../../assets/icons/materialIcon.png"
         alt="Angular"
       />
-      <p>Material <br> Design</p>
+      <p>
+        Material <br />
+        Design
+      </p>
+      </div>
+      <div class="box">
+        <img
+          class="firstImg"
+          src="../../assets/icons/apiIcon.png"
+          alt="Angular"
+        />
+        <p>Rest-Api</p>
+      </div>
     </div>
-</div>
+    <div class="box lastBox">
+      <img
+      class="firstImg"
+      src="../../assets/icons/scrumIcon.png"
+      alt="Angular"
+    />
+    <p>Scrum</p>
+    </div>
+  </ng-template>
 </div>
