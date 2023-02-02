@@ -253,6 +253,9 @@ button{
     }
 }
 @media (max-width: 1100px) {
+    .bubbleBySharkieSmall {
+        display: none;
+    }
     .columnWork {
         display: flex; 
         flex-direction: column;
@@ -280,23 +283,61 @@ button{
         }
     }
     .workIMG {
-        width: 60vw;
+        width: 500px;
         height: auto;
     }
-}
-@media (max-width: 900px) {
+    .bubbleBySharkie {
+        width: 350px;
+        height: 350px;
+        top: 3800px;
+        left: 50vw;
+        z-index: -1;
+    }
+    .bubbleByJoin {
+        top: 3000px;
+    }
     .bubbleByTitle {
         width: 45px;
         height: 45px;
     }
     .bubbleByText {
-        width: 70px;
-        height: 70px;
+        width: 90px;
+        height: 90px;
         margin-top: 50px;
         float: right;
     }
+    .bubbleByROF {
+        top: 4800px;
+        left: 10vw;
+    }
+}
+@media (max-width: 900px) {
+    .bubbleByTitle {
+        width: 60px;
+        height: 60px;
+    }
+    .bubbleByText {
+        width: 70px;
+        height: 70px;
+    }
 }
 @media (max-width: 600px) {
+    .bubbleByTitle {
+        position: relative;
+        left: 20vw;
+    }
+    .bubbleByROF {
+        top: 4500px;
+    }
+    .bubbleBySharkie {
+        top: 3700px;
+    }
+    .bubbleByJoin {
+        top: 2900px;
+    }
+    .workIMG {
+        width: 400px; 
+    }
     .title {
         p {
             font-size: 12px;
@@ -328,6 +369,28 @@ button{
     }
 }
 @media (max-width: 500px) {
+    .title {
+        margin-bottom: 50px; 
+    }
+    .bubbleByText {
+        display: none;
+    }
+    .bubbleByTitle {
+        left: 30vw;
+    }
+    .bubbleByJoin {
+        width: 380px;
+        height: 380px;
+    }
+    .bubbleByROF {
+        top: 4400px;
+    }
+    .bubbleBySharkie {
+        top: 3600px;
+    }
+    .workIMG {
+        width: 350px;
+    }
     .textRight {
         width: 80vw;
         h1 {
@@ -342,6 +405,22 @@ button{
     }
 }
 @media (max-width: 420px) {
+    .bubbleByTitle {
+        width: 40px;
+        height: 40px;
+    }
+    .bubbleByROF {
+        top: 4350px;
+    }
+    .bubbleByJoin {
+        width: 230px;
+        height: 230px;
+        left: -50px;
+        top: 2950px;
+    }
+    .workIMG {
+        width: 300px;
+    }
     .title {
         h1 {
             font-size: 70px;
