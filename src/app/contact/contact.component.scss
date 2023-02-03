@@ -186,3 +186,33 @@ textarea{
     }
 }
 
+@media (max-width: 1100px) {
+    .contactContext {
+        flex-direction: column;
+        align-items: center;
+    }
+    .text {
+        margin-left: 50px;
+        text-align: center;
+        h1 {
+            font-size: 64px;
+        }
+        margin-bottom: 100px;
+        h1 {
+            margin-bottom: 50px;
+        }
+    }
+    .contactBackground {
+        height: 1270px;
+    }
+    textarea {
+        width: 40vw;
+    }
+    .bubbleByContactBig {
+        top: 550px;
+    }
+    .bubbleByContactSmall {
+        top: 50px;
+        left: 700px;
+    }
+}
