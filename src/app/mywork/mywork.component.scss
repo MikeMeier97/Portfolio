@@ -1,4 +1,5 @@
 .myworkContent {
+    position: relative;
     padding-top: 50px;
     margin-left: 5vw;
     margin-right: 5vw;
@@ -24,7 +25,7 @@
     margin-top: 150px;
     width: 100vw;
     display: flex; 
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 90px;
 }
 .workIMG {
@@ -44,6 +45,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    width: 530px;
     margin-bottom: 20px; 
     margin-right: 200px;
     h1 {
@@ -69,6 +71,7 @@
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-end;
+    width: 530px;
     margin-bottom: 20px; 
     h1 {
         font-family: 'Baloo Bhaina 2', sans-serif;
@@ -185,8 +188,8 @@ button{
     width: 400px;
     height: 400px; 
     position: absolute;
-    top: 3000px; 
-    left: -150px;
+    top: 600px; 
+    left: -250px;
     z-index: -1;
     float: left;
     object-fit: cover;
@@ -196,24 +199,24 @@ button{
     width: 650px;
     height: 650px; 
     position: absolute;
-    top: 3300px; 
+    top: 900px; 
     z-index: -1;
-    left: 75vw;
+    left: 70vw;
 }
 
 .bubbleBySharkieSmall {
     width: 50px;
     height: 50px; 
     position: absolute;
-    top: 3700px; 
-    left: 200px; 
+    top: 1400px; 
+    left: 100px; 
     z-index: -1;
 }
 .bubbleByROF {
     width: 240px;
     height: 240px; 
     position: absolute;
-    top: 4100px;
+    top: 1800px;
     left: 200px; 
     z-index: 1; 
 }
@@ -224,10 +227,16 @@ button{
         height: 316px;
     }
     .bubbleBySharkie {
-        top: 3200px;
+        top: 800px;
+        width: 500px;
+        height: 500px;
     }
     .bubbleByJoin {
-        top: 2900px;
+        width: 300px;
+        height: 300px;
+    }
+    .bubbleByROF {
+        top: 1550px;
     }
     .textRight {
         h1 {
@@ -255,6 +264,10 @@ button{
 @media (max-width: 1100px) {
     .bubbleBySharkieSmall {
         display: none;
+    }
+    .bubbleBySharkie {
+        top: 1300px;
+        left: 60vw !important;
     }
     .columnWork {
         display: flex; 
@@ -289,12 +302,8 @@ button{
     .bubbleBySharkie {
         width: 350px;
         height: 350px;
-        top: 3800px;
         left: 50vw;
         z-index: -1;
-    }
-    .bubbleByJoin {
-        top: 3000px;
     }
     .bubbleByTitle {
         width: 45px;
@@ -307,7 +316,7 @@ button{
         float: right;
     }
     .bubbleByROF {
-        top: 4800px;
+        top: 2250px;
         left: 10vw;
     }
 }
@@ -316,24 +325,28 @@ button{
         width: 60px;
         height: 60px;
     }
+    .bubbleByROF{
+        top: 2230px;
+    }
     .bubbleByText {
         width: 70px;
         height: 70px;
     }
 }
 @media (max-width: 600px) {
+    .bubbleByJoin {
+        top: 500px;
+        left: -150px;
+    }
+    .bubbleBySharkie {
+        top: 1100px;
+    }
+    .bubbleByROF {
+        top: 1950px;
+    }
     .bubbleByTitle {
         position: relative;
         left: 20vw;
-    }
-    .bubbleByROF {
-        top: 4500px;
-    }
-    .bubbleBySharkie {
-        top: 3700px;
-    }
-    .bubbleByJoin {
-        top: 2900px;
     }
     .workIMG {
         width: 400px; 
@@ -378,15 +391,11 @@ button{
     .bubbleByTitle {
         left: 30vw;
     }
-    .bubbleByJoin {
-        width: 380px;
-        height: 380px;
-    }
     .bubbleByROF {
-        top: 4400px;
+        top: 1850px;
     }
-    .bubbleBySharkie {
-        top: 3600px;
+    .bubbleByJoin {
+        top: 350px;
     }
     .workIMG {
         width: 350px;
@@ -409,14 +418,17 @@ button{
         width: 40px;
         height: 40px;
     }
-    .bubbleByROF {
-        top: 4350px;
-    }
     .bubbleByJoin {
         width: 230px;
         height: 230px;
         left: -50px;
-        top: 2950px;
+    }
+    .bubbleBySharkie {
+        top: 1000px;
+    }
+    .bubbleByROF {
+        top: 1750px;
+        left: 0px;
     }
     .workIMG {
         width: 300px;
