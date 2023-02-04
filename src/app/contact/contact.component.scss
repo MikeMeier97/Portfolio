@@ -211,6 +211,11 @@ textarea{
         left: 700px;
     }
 }
+@media(max-width: 800px) {
+    .bubbleByContactSmall {
+        left: 80vw;
+    }
+}
 @media(max-width: 700px) {
     .bubbleByContactBig {
         left: 30vw;

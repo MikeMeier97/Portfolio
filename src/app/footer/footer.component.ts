@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-footer',
@@ -6,6 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit{
-  ngOnInit(): void {}
+  ngOnInit(): void {this.innerWidth = window.innerWidth;}
   date: number = new Date().getFullYear(); 
+  numberOfBubbles = 10;
+  bubbles = Array(this.numberOfBubbles).fill(0);
+  public innerWidth: any;
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    this.innerWidth = window.innerWidth;
+  }
 }

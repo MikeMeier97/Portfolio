@@ -43,6 +43,28 @@ footer {
         color: white; 
     }
 }
-#impressum {
+.impressum {
     font-size: 16px;
+    color: white;
+}
+@media (max-width: 800px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    height: 380px;
+  }
+  .footerBackground {
+    height: 380px;
+  }
+  .text {
+    padding-top: 10px; 
+    gap: 0;
+  }
+  #iconFooter {
+    padding-right: 0; 
+    padding-top: 60px; 
+  }
+  .impressum {
+    margin-bottom: 80px;
+  }
 }
