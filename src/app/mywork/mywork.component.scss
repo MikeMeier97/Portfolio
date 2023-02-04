@@ -1,12 +1,12 @@
 .myworkContent {
+    overflow: hidden;
     position: relative;
     padding-top: 50px;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    width: 100vw;
     max-width: 100%;
 }
 .title {
+    margin-left: 5vw;
+    margin-right: 5vw;
     margin-top: 100px;
     h1 {
         font-family: 'Baloo Bhaina 2', sans-serif;
@@ -22,6 +22,8 @@
     }
 }
 .columnWork{
+    margin-left: 5vw;
+    margin-right: 5vw;
     margin-top: 150px;
     width: 100vw;
     display: flex; 

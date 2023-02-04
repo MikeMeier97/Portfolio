@@ -21,10 +21,9 @@
     }
 }
 .contactContext {
-    padding-top: 180px;
-    padding-bottom: 100px;
-    padding-left: 5vw; 
-    padding-right: 5vw; 
+    padding: 180px 5vw 100px 5vw;
+    overflow: hidden; 
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -245,6 +244,6 @@ textarea{
 }
 @media (max-width: 450px) {
     .bubbleUP {
-        top: 1170px;
+        top: 1150px;
     }
 }
