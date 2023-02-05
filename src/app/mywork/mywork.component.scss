@@ -94,7 +94,8 @@
 
     }
 }
-.button {
+.buttonGIT {
+    margin-left: 50px;
     color: #5988FF;
     font-size: 23px; 
     width: 137px;
@@ -104,15 +105,7 @@
     border-radius: 10px;
     border-color: #5988FF;
     margin-top: 35px;
-}
-
-.theWorks {
-    display: flex; 
-    flex-direction: column;
-}
-
-button{
-    animation-name: hover-animation-button-out;
+    animation-name: hover-animation-button-out-GIT;
     animation-duration: 0.2s;
     animation-fill-mode: forwards;
     &:hover {
@@ -123,6 +116,32 @@ button{
         cursor: pointer;
     }
 }
+.buttonTest {
+    color: #ffffff;
+    font-size: 23px; 
+    width: 137px;
+    height: 58px;
+    background-color: #5988FF;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #5988FF;
+    margin-top: 35px;
+    animation-name: hover-animation-button-out-Test;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    &:hover {
+        animation-name: hover-animation-button-in;
+        animation-duration: 0.2s;
+        animation-fill-mode: forwards;
+        color: white;
+        cursor: pointer;
+    }
+}
+.theWorks {
+    display: flex; 
+    flex-direction: column;
+}
+
 @keyframes hover-animation-button-in {
     0% {
         transform: scale(1);
@@ -141,7 +160,7 @@ button{
         border: none;
     }
 }
-@keyframes hover-animation-button-out {
+@keyframes hover-animation-button-out-GIT {
     from{
         background: radial-gradient(74.22% 74.22% at 19.79% 22.42%, #5988FF 6.25%, #5988FF 51.56%, #0043F0 100%);
         border: none;
@@ -151,6 +170,18 @@ button{
         transform: scale(1);
         border: 2px solid #5988FF;
         background: white;
+    }
+}
+@keyframes hover-animation-button-out-Test {
+    from{
+        background: #FFFFFF;
+        border: none;
+        transform: scale(1.2);
+    }
+    to {
+        transform: scale(1);
+        border: 2px solid #5988FF;
+        background: #5988FF;
     }
 }
 
@@ -401,6 +432,15 @@ button{
     }
     .workIMG {
         width: 350px;
+    }
+    .buttonGIT {
+        width: 120px;
+        height: 54px; 
+        margin-left: 30px;
+    }
+    .buttonTest {
+        width: 120px;
+        height: 54px; 
     }
     .textRight {
         width: 80vw;
