@@ -226,14 +226,15 @@ nav {
     width: 90vw;
   }
 }
-@media(max-width: 450px) {
-  .headTitle {
-    h3 {
-      font-size: 40px;
+@media(max-width: 700px) {
+  .logo {
+    img {
+      width: 50px;
     }
-    h1 {
-      font-size: 72px;
-    }
+  }
+  .burgerMenu {
+    width: 30px;
+    height: 30px;
   }
 }
 @media(max-width: 600px) {
@@ -249,6 +250,16 @@ nav {
 @media(max-width: 470px) {
   .headBubble {
     width: 550px;
+  }
+}
+@media(max-width: 450px) {
+  .headTitle {
+    h3 {
+      font-size: 40px;
+    }
+    h1 {
+      font-size: 72px;
+    }
   }
 }
 @media(max-width: 420px) {
@@ -303,5 +314,24 @@ nav {
 @media screen and (max-width: 1100px) and (max-height: 600px) {
   .headTitle {
     top: 2vh;
+  }
+}
+@media (max-height: 620px) {
+  .logo {
+    img {
+      width: 40px;
+    }
+  }
+  .burgerMenu {
+    width: 30px;
+    height: 30px;
+  }
+  .headTitle {
+    h3 {
+      font-size: 30px;
+    }
+    h1 {
+      font-size: 70px;
+    }
   }
 }
