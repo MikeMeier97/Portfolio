@@ -1,3 +1,4 @@
+import { APP_BASE_HREF } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,4 +9,5 @@ import { Component, OnInit } from '@angular/core';
 export class AboutmeComponent implements OnInit{
   ngOnInit(): void {}
   constructor(){}
+
 }
