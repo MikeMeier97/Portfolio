@@ -15,4 +15,10 @@ export class FooterComponent implements OnInit{
   onResize(event: any) {
     this.innerWidth = window.innerWidth;
   }
+  goToLink(url: any) {
+    window.open(url);
+  }
+  mailMe() {
+    window.location.href = "mailto:user@example.com?subject=Subject&body=message%20goes%20here"; // Todo Mail 
+  }
 }

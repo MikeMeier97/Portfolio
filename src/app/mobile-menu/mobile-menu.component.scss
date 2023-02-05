@@ -1,0 +1,128 @@
+.content {
+  width: 90vw;
+}
+.d-none {
+    display: none !important;
+}
+.menuMobile {
+  z-index: 2;
+  overflow: hidden;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  background: linear-gradient(179.99deg, #ffffffdc 12.89%, #e9e9e9d8 91.39%);
+  img {
+    width: 50px;
+    margin-top: 15px;
+    z-index: 2;
+  }
+}
+.close_animation-img {
+  animation-name: close-animation;
+  animation-duration: 400ms;
+  animation-fill-mode: forwards;
+  transition-timing-function: ease-in-out;
+}
+.open_animation-img {
+  animation-name: close-animation;
+  animation-duration: 400ms;
+  animation-fill-mode: forwards;
+  transition-timing-function: ease-in-out;
+}
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#burgerMenuOpen {
+  width: 30px !important;
+  height: 30px !important;
+  &:hover {
+    cursor: pointer;
+  }
+}
+nav {
+  position: absolute;
+  width: 90vw;
+  max-width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+  a {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    font-size: 32px;
+    color: #5988ff;
+    &:hover {
+      font-weight: bold;
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .burgerMenuOpen {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  .menuMobile {
+    img {
+      width: 70px;
+      height: 70px;
+    }
+  }
+}
+@keyframes open-animation-slide {
+  from {
+    transform: translateX(1000px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+@keyframes close-animation-slide {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(1000px);
+  }
+}
+@keyframes open-animation {
+  0% {
+    content: url('../../assets/img/mobileMenu/menuMobile1.png');
+  }
+  35% {
+    content: url('../../assets/img/mobileMenu/menuMobile2.png');
+  }
+  70% {
+    content: url('../../assets/img/mobileMenu/menuMobile3.png');
+
+  }
+  100% {
+    content: url('../../assets/img/mobileMenu/menuMobile4.png');
+  }
+}
+@keyframes close-animation {
+  0% {
+    content: url('../../assets/img/mobileMenu/menuMobile4.png');
+  }
+  35% {
+    content: url('../../assets/img/mobileMenu/menuMobile3.png');
+  }
+  70% {
+    content: url('../../assets/img/mobileMenu/menuMobile2.png');
+  }
+  100% {
+    content: url('../../assets/img/mobileMenu/menuMobile1.png'); 
+  } 
+}

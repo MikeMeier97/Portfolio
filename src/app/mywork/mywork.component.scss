@@ -116,6 +116,12 @@
         cursor: pointer;
     }
 }
+.buttonDisalbed {
+    animation-name: none !important;
+    background-color: #5988ffa2 !important;
+    border: none !important;
+    cursor: default !important;
+}
 .buttonTest {
     color: #ffffff;
     font-size: 23px; 
@@ -482,5 +488,17 @@
         p {
             font-size: 14px;
         }
+    }
+}
+@media (max-width: 350px) {
+    .buttonTest {
+        width: 100px;
+        height: 50px;
+        font-size: 18px;
+    }
+    .buttonGIT {
+        width: 100px;
+        height: 50px;
+        font-size: 18px;
     }
 }

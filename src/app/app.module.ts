@@ -11,6 +11,7 @@ import { MyworkComponent } from './mywork/mywork.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MobileMenuComponent } from './mobile-menu/mobile-menu.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MyworkComponent,
     ContactComponent,
     FooterComponent,
+    MobileMenuComponent,
   ],
   imports: [
     BrowserModule,

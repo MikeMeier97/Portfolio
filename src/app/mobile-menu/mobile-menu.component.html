@@ -1,0 +1,13 @@
+<div [class.d-none]="mobileMenu" class="menuMobile">
+  <div class="content">
+    <div class="icons">
+      <img src="../../assets/img/logos/logoblue.png" alt="Logo" />
+      <img (click)="menuToggle()" id="burgerMenuOpen" [class.close_animation-img]="mobileMenu"  src="../../assets/img/mobileMenu/menuMobile4.png" alt="Menu">
+    </div>
+    <nav>
+      <a (click)="menuToggle()" href="#aboutme">About me</a>
+      <a (click)="menuToggle()" href="#skillset">Skill set</a>
+      <a (click)="menuToggle()" href="#mywork">My work</a>
+    </nav>
+  </div>
+</div>
