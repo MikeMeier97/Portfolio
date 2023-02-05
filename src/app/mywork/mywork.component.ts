@@ -14,4 +14,7 @@ export class MyworkComponent implements OnInit{
   onResize(event: any) {
     this.innerWidth = window.innerWidth;
   }
+  goToLink(url: any) {
+    window.open(url);
+  }
 }

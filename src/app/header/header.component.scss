@@ -35,12 +35,13 @@ nav {
   display: flex;
   margin-top: 50px;
   a {
+    width: 130px;
     font-family: "Montserrat", sans-serif;
     text-decoration: none;
-    margin-left: 60px;
+    margin-left: 50px;
     color: #5988ff;
     &:hover {
-      /* TODO Bold */
+      font-weight: bold;
       cursor: pointer;
     }
   }
