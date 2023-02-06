@@ -6,6 +6,9 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent {
+  defaultValue1: string = '';
+  defaultValue2: string = '';
+  defaultValue3: string = '';
   @ViewChild('name') name!: ElementRef;
   @ViewChild('email') email!: ElementRef;
   @ViewChild('message') message!: ElementRef;
@@ -20,6 +23,10 @@ export class ContactComponent {
     messageField.disabled = true;
     sendButton.disabled = true; // todo style
 
+    this.defaultValue1 = '';
+    this.defaultValue2 = '';
+    this.defaultValue3 = '';
+
 
     // todo load animation 
     let formDATA = new FormData();
@@ -32,10 +39,14 @@ export class ContactComponent {
         body: formDATA
       }
     )
-      // todo text anzeigen "gesendet"
+    document.getElementById('success')?.classList.remove('d-none');
+    setTimeout(() => {
+      document.getElementById('success')?.classList.add('d-none');
+    }, 5000);
     nameField.disabled = false;
     emailField.disabled = false;
     messageField.disabled = false;
     sendButton.disabled = false;
   }
+  
 }

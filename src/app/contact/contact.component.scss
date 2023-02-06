@@ -55,6 +55,9 @@ form {
     resize: none;
     
 }
+.d-none {
+    display: none !important; 
+}
 .textField {
     border-radius: 10px;
     border: 1px solid #5988FF;
@@ -68,7 +71,9 @@ form {
         animation-fill-mode: forwards;
     }
 }
-
+#success {
+    color: rgb(18, 150, 18);
+}
 button{
     color: #5988FF;
     font-size: 23px; 

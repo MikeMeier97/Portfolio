@@ -12,6 +12,8 @@
   <form (submit)="sendMail()" ngNativeValidate #myForm>
     <!-- TODO STYLE -->
     <textarea
+    [ngModelOptions]="{standalone: true}"
+    [(ngModel)]="defaultValue1"
       class="textField"
       name="name"
       #name
@@ -21,6 +23,8 @@
       placeholder="Your name"
     ></textarea>
     <textarea
+    [ngModelOptions]="{standalone: true}"
+    [(ngModel)]="defaultValue2"
       class="textField"
       name=""
       type="email"
@@ -30,6 +34,8 @@
       placeholder="Your email"
     ></textarea>
     <textarea
+    [ngModelOptions]="{standalone: true}"
+    [(ngModel)]="defaultValue3"
       class="textField"
       name="message"
       #message
@@ -37,6 +43,7 @@
       id="message"
       placeholder="Your message"
     ></textarea>
+    <p id="success" class="d-none">Mail sent successfully!</p>
     <button #sendButton>Say hello ;)</button>
   </form>
   <img
