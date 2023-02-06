@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
+import { HeroService } from '../hero.service';
 
 
 
@@ -9,7 +10,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 })
 export class HeaderComponent implements OnInit{
   ngOnInit(): void {}
-  constructor(){}
+  constructor(public heroService: HeroService){}
   mailMe() {
     window.location.href = "mailto:user@example.com?subject=Subject&body=message%20goes%20here"; // Todo Mail 
   }

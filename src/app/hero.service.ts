@@ -1,9 +1,16 @@
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class HeroService {
-
-  constructor() { }
+  mobileMenu: boolean = true; //change
+  menuToggle() {
+    if (!this.mobileMenu) {
+      this.mobileMenu = true;
+    } else {
+      this.mobileMenu = false;
+    }
+  }
+  constructor() {}
 }
