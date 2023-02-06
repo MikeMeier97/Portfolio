@@ -84,18 +84,18 @@ nav {
 }
 @keyframes open-animation-slide {
   from {
-    transform: translateX(1000px);
+    transform: translateX(-200vw);
   }
   to {
-    transform: translateX(0px);
+    transform: translateX(0vw);
   }
 }
 @keyframes close-animation-slide {
   from {
-    transform: translateX(0px);
+    transform: translateX(0vw);
   }
   to {
-    transform: translateX(1000px);
+    transform: translateX(-200vw);
   }
 }
 @keyframes open-animation {

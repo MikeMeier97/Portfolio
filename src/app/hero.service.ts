@@ -17,7 +17,7 @@ export class HeroService {
       setTimeout(() => {
         document.getElementById('menuMobile')?.classList.add('d-none');
         this.document.body.classList.remove('overflow_hidden');
-      }, 1000);
+      }, 500);
       this.mobileMenuHidden = true;
     } else {
       this.document.body.classList.add('overflow_hidden');
