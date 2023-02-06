@@ -1,8 +1,8 @@
-<div [class.d-none]="this.heroService.mobileMenu" class="menuMobile">
+<div [class.close_animation-slide]="this.heroService.mobileMenuHidden" id="menuMobile" class="d-none">
   <div class="content">
     <div class="icons">
       <img src="../../assets/img/logos/logoblue.png" alt="Logo" />
-      <img (click)="this.heroService.menuToggle()" id="burgerMenuOpen" [class.close_animation-img]="this.heroService.mobileMenu"  src="../../assets/img/mobileMenu/menuMobile4.png" alt="Menu">
+      <img (click)="this.heroService.menuToggle()" id="burgerMenuOpen"  src="../../assets/img/mobileMenu/menuMobile4.png" alt="Menu">
     </div>
     <nav>
       <a (click)="this.heroService.menuToggle()" href="#aboutme">About me</a>

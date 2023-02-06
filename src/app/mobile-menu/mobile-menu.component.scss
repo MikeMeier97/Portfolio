@@ -4,7 +4,7 @@
 .d-none {
     display: none !important;
 }
-.menuMobile {
+#menuMobile {
   z-index: 2;
   overflow: hidden;
   position: absolute;
@@ -17,22 +17,23 @@
   width: 100vw;
   max-width: 100%;
   height: 100vh;
-  background: linear-gradient(179.99deg, #ffffffdc 12.89%, #e9e9e9d8 91.39%);
+  background: linear-gradient(179.99deg, #ffffff 12.89%, #e9e9e9e3 91.39%);
   img {
     width: 50px;
     margin-top: 15px;
     z-index: 2;
   }
 }
-.close_animation-img {
-  animation-name: close-animation;
-  animation-duration: 400ms;
+
+.close_animation-slide {
+  animation-name: close-animation-slide;
+  animation-duration: 1000ms;
   animation-fill-mode: forwards;
   transition-timing-function: ease-in-out;
 }
-.open_animation-img {
-  animation-name: close-animation;
-  animation-duration: 400ms;
+.open_animation-slide {
+  animation-name: open-animation-slide;
+  animation-duration: 1000ms;
   animation-fill-mode: forwards;
   transition-timing-function: ease-in-out;
 }
