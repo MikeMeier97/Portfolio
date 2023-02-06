@@ -36,7 +36,8 @@ nav {
   display: flex;
   margin-top: 50px;
   a {
-    width: 130px;
+    width: 100%;
+    white-space: nowrap;
     font-family: "Montserrat", sans-serif;
     text-decoration: none;
     margin-left: 50px;

@@ -124,7 +124,7 @@ textarea{
     width: 40px;
     height: 40px;
     position: absolute;
-    top: 700px;
+    top: 680px;
     left: 50px;
     z-index: 0; 
     &:hover {
@@ -192,7 +192,7 @@ textarea{
 }
 @media (max-width: 1100px) {
     .bubbleUP {
-        top: 1080px;
+        top: 1050px;
         left: 5vw;
     }
     .contactContext {
@@ -239,21 +239,13 @@ textarea{
         top: 1100px;
     }
 }
-@media (max-width: 580px) {
-    .bubbleUP {
-        top: 1150px;
-    }
-}
 @media (max-width: 500px) {
-    .bubbleUP {
-        top: 1150px;
-    }
     .text {
         margin-left: 20px;
         margin-right: 20px;
     }
 }
-@media (max-width: 450px) {
+@media (max-width: 460px) {
     .bubbleUP {
         top: 1150px;
     }
