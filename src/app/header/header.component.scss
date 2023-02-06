@@ -19,7 +19,7 @@
 .headBubble {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 0px;
   z-index: 0;
   width: 800px;
 }
@@ -72,7 +72,9 @@ nav {
 .myPicture {
   position: absolute;
   bottom: 0;
-  width: 75vh;
+  width: auto;
+  height: auto;
+  max-width: 100%;
 }
 .burgerMenu {
   z-index: 101;
@@ -252,7 +254,7 @@ nav {
 }
 @media (max-width: 470px) {
   .headBubble {
-    width: 550px;
+    width: 520px;
   }
 }
 @media (max-width: 450px) {
@@ -272,7 +274,7 @@ nav {
 }
 @media (max-width: 400px) {
   .headBubble {
-    width: 480px;
+    width: 470px;
   }
   .headTitle {
     h3 {
@@ -283,11 +285,12 @@ nav {
     }
   }
 }
-@media (max-width: 360px) {
+@media(max-width: 380px) {
   .headBubble {
-    width: 460px;
+    width: 450px;
   }
 }
+
 @media (max-height: 860px) {
   .scroll {
     height: 100px;
