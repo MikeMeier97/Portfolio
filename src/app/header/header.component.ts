@@ -12,7 +12,7 @@ export class HeaderComponent implements OnInit{
   ngOnInit(): void {}
   constructor(public heroService: HeroService){}
   mailMe() {
-    window.location.href = "mailto:user@example.com?subject=Subject&body=message%20goes%20here"; // Todo Mail 
+    window.location.href = "mailto:contact@mike-meier.info";
   }
   goToLink(url: any) {
     window.open(url);

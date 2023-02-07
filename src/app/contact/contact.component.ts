@@ -21,14 +21,13 @@ export class ContactComponent {
     nameField.disabled = true;
     emailField.disabled = true;
     messageField.disabled = true;
-    sendButton.disabled = true; // todo style
+    sendButton.disabled = true; 
 
     this.defaultValue1 = '';
     this.defaultValue2 = '';
     this.defaultValue3 = '';
 
 
-    // todo load animation 
     let formDATA = new FormData();
     formDATA.append('name', nameField.value);
     formDATA.append('message', messageField.value);
