@@ -9,41 +9,84 @@
     </p>
     <p class="subtext">Need a Frontend developer? <b>Contact me!</b></p>
   </div>
-  <form (submit)="sendMail()" ngNativeValidate #myForm>
-    <textarea
-    [ngModelOptions]="{standalone: true}"
-    [(ngModel)]="defaultValue1"
-      class="textField"
-      name="name"
-      #name
-      id="name"
-      required
-      type="text"
-      placeholder="Your name"
-    ></textarea>
-    <textarea
-    [ngModelOptions]="{standalone: true}"
-    [(ngModel)]="defaultValue2"
-      class="textField"
-      name=""
-      type="email"
-      id="email"
-      #email
-      required
-      placeholder="Your email"
-    ></textarea>
-    <textarea
-    [ngModelOptions]="{standalone: true}"
-    [(ngModel)]="defaultValue3"
-      class="textField"
-      name="message"
-      #message
-      required
-      id="message"
-      placeholder="Your message"
-    ></textarea>
-    <p id="success" class="d-none">Mail sent successfully!</p>
-    <button #sendButton>Say hello ;)</button>
+  <form (submit)="sendMail()" ngNativeValidate #myForm [formGroup]="loginForm">
+    <div class="z-1">
+      <textarea
+        [(ngModel)]="defaultValue1"
+        formControlName="name"
+        class="textField"
+        name="name"
+        #name
+        id="name"
+        required
+        type="text"
+        placeholder="Your name"
+      ></textarea>
+      <ng-container
+        *ngIf="
+          loginForm.controls['name'].dirty ||
+          loginForm.controls['name'].touched
+        "
+      >
+        <p [class.d-none]="textDisabled" *ngIf="loginForm.controls['name'].errors" #error id="error" style="width: 98%; height: 5px; margin: 0 !important">
+          Name is missing
+        </p>
+      </ng-container>
+    </div>
+    <div class="z-1">
+      <textarea
+        formControlName="email"
+        [(ngModel)]="defaultValue2"
+        class="textField"
+        name="email"
+        type="email"
+        id="email"
+        #email
+        required
+        placeholder="Your email"
+      ></textarea>
+      <ng-container
+        *ngIf="
+          loginForm.controls['email'].dirty ||
+          loginForm.controls['email'].touched
+        "
+      >
+        <p [class.d-none]="textDisabled" *ngIf="loginForm.controls['email'].errors?.['required']" #error id="error" style="width: 98%; height: 5px">Email is missing </p>
+        <p [class.d-none]="textDisabled" *ngIf="loginForm.controls['email'].errors?.['email']" #error id="error" style="width: 98%; height: 5px">E-mail incorrect</p>
+      </ng-container>
+    </div>
+    <div class="z-1">
+      <textarea
+        formControlName="message"
+        [(ngModel)]="defaultValue3"
+        class="textField"
+        name="message"
+        #message
+        required
+        id="message"
+        placeholder="Your message"
+      ></textarea>
+
+      <p id="success" class="d-none" style="width: 98%; height: 5px">
+        Mail sent successfully!
+      </p>
+      <ng-container
+        *ngIf="
+          loginForm.controls['message'].dirty ||
+          loginForm.controls['message'].touched
+        "
+      >
+        <p [class.d-none]="textDisabled" *ngIf="loginForm.controls['message'].errors?.['required']" id="error" #error style="width: 98%; height: 5px">Message is missing</p>
+        <p [class.d-none]="textDisabled" *ngIf="loginForm.controls['message'].errors?.['minlength']" id="error" #error style="width: 98%; height: 5px">Message too short</p>
+      </ng-container>
+    </div>
+
+    <button
+      #sendButton
+      [disabled]="!(loginForm.valid && (loginForm.dirty || loginForm.touched))"
+    >
+      Say hello ;)
+    </button>
   </form>
   <img
     class="bubbleByContactBig"

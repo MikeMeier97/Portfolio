@@ -20,6 +20,9 @@
         color: #5988FF;
     }
 }
+#error {
+    color: red;
+}
 .contactContext {
     padding: 180px 5vw 100px 5vw;
     overflow: hidden; 
@@ -89,19 +92,31 @@ button{
     animation-name: hover-animation-button-out;
     animation-duration: 0.2s;
     animation-fill-mode: forwards;
-    &:hover {
-        animation-name: hover-animation-button-in;
-        animation-duration: 0.2s;
-        animation-fill-mode: forwards;
-        color: white;
-        cursor: pointer;
-    }
+        &:hover {
+            animation-name: hover-animation-button-in;
+            animation-duration: 0.2s;
+            animation-fill-mode: forwards;
+            color: white;
+            cursor: pointer;
+        }
+}
+.z-1 {
+    z-index: 1;
 }
 textarea{
     outline-color: #04060ab0; 
     margin: 0;
     background: #fafafa;
     z-index: 1;
+    margin-bottom: 5px;
+    &.ng-touched, &.ng-dirty {
+        &.ng-invalid {
+            border-color: red;
+        }
+        &.ng-valid {
+            border-color: green;
+        }
+    }
 }
 .bubbleByContactBig {
     width: 200px;
@@ -186,7 +201,7 @@ textarea{
 } 
 @media (max-width: 1250px) {
     .bubbleByContactBig {
-        left: 50vw;
+        left: 60vw;
         top: 200px;
     }
 }
@@ -228,7 +243,7 @@ textarea{
 }
 @media(max-width: 700px) {
     .bubbleByContactBig {
-        left: 30vw;
+        left: 40vw;
     }
 }
 @media (max-width: 600px) {

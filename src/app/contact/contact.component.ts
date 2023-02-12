@@ -1,4 +1,6 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -9,6 +11,7 @@ export class ContactComponent {
   defaultValue1: string = '';
   defaultValue2: string = '';
   defaultValue3: string = '';
+  textDisabled = false; 
   @ViewChild('name') name!: ElementRef;
   @ViewChild('email') email!: ElementRef;
   @ViewChild('message') message!: ElementRef;
@@ -22,6 +25,11 @@ export class ContactComponent {
     emailField.disabled = true;
     messageField.disabled = true;
     sendButton.disabled = true; 
+    nameField.classList.remove('ng-invalid', 'ng-valid', 'ng-touched', 'ng-dirty');
+    emailField.classList.remove('ng-invalid', 'ng-valid', 'ng-touched', 'ng-dirty');
+    messageField.classList.remove('ng-invalid', 'ng-valid', 'ng-touched', 'ng-dirty');
+    sendButton.classList.remove('ng-invalid', 'ng-valid', 'ng-touched', 'ng-dirty'); 
+    this.textDisabled = true;
 
     this.defaultValue1 = '';
     this.defaultValue2 = '';
@@ -42,10 +50,21 @@ export class ContactComponent {
     setTimeout(() => {
       document.getElementById('success')?.classList.add('d-none');
     }, 5000);
-    nameField.disabled = false;
-    emailField.disabled = false;
-    messageField.disabled = false;
-    sendButton.disabled = false;
   }
-  
+  public loginForm: FormGroup = new FormGroup({
+    name: new FormControl('', [
+      Validators.required
+    ], []),
+    email: new FormControl('', [
+      Validators.required,
+      Validators.email
+    ], []),
+    message: new FormControl('', [
+      Validators.required, 
+      Validators.minLength(10)
+    ], [])
+  });
+  constructor() {
+    this.loginForm.valueChanges.subscribe(console.log);
+  }
 }
