@@ -65,6 +65,6 @@ export class ContactComponent {
     ], [])
   });
   constructor() {
-    this.loginForm.valueChanges.subscribe(console.log);
+    this.loginForm.valueChanges.subscribe();
   }
 }
