@@ -73,6 +73,7 @@ nav {
 .myPicture {
   position: absolute;
   bottom: 0;
+  margin-left: 8vw;
   width: auto;
   height: auto;
   max-width: 65vh;
@@ -168,7 +169,10 @@ nav {
 
 @media (max-width: 1400px) {
   .headTitle {
-    left: 55vw;
+    left: 58vw;
+  }
+  nav {
+    font-size: 18px;
   }
 }
 @media (max-width: 1250px) {
@@ -178,8 +182,11 @@ nav {
   .headBubble {
     left: -100px;
   }
+  .burgerMenu {
+    display: block;
+  }
   nav {
-    font-size: 18px;
+    display: none;
   }
   .headTitle {
     left: 58vw;
@@ -197,9 +204,6 @@ nav {
   .scrollAndIcons {
     display: none;
   }
-  nav {
-    display: none;
-  }
   .headContent {
     display: flex;
     flex-direction: column;
@@ -208,9 +212,7 @@ nav {
   .myPicture {
     height: 60vh;
     width: auto;
-  }
-  .burgerMenu {
-    display: block;
+    margin-left: 0;
   }
   .headBubble {
     width: 100vw;
