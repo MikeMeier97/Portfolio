@@ -45,15 +45,18 @@ form {
     align-items: center;  
 }
 #message {    
-    padding: 10px 30vw 140px 20px;
+    width: 40vw;
+    padding: 10px 20px 140px 20px;
 }
 #name{
-    padding: 10px 30vw 0px 20px;
+    width: 40vw;
+    padding: 10px 20px 0px 20px;
     height: 30px;
     resize: none;
 }
 #email {
-    padding: 10px 30vw 0px 20px;
+    width: 40vw;
+    padding: 10px 20px 0px 20px;
     height: 30px;
     resize: none;
     
@@ -226,7 +229,7 @@ textarea{
         }
     }
     textarea {
-        width: 40vw;
+        width: 60vw !important;
     }
     .bubbleByContactBig {
         top: 550px;
