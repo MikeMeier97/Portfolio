@@ -12,15 +12,18 @@ export class ContactComponent {
   defaultValue2: string = '';
   defaultValue3: string = '';
   textDisabled = false; 
+  popupClass: any; 
   @ViewChild('name') name!: ElementRef;
   @ViewChild('email') email!: ElementRef;
   @ViewChild('message') message!: ElementRef;
   @ViewChild('sendButton') sendButton!: ElementRef;
+  @ViewChild('success') popup!: ElementRef;
   async sendMail() {
     let nameField = this.name.nativeElement;
     let emailField = this.email.nativeElement;
     let messageField = this.message.nativeElement; 
     let sendButton = this.sendButton.nativeElement;
+    let popupClass = this.popup.nativeElement;
     nameField.disabled = true;
     emailField.disabled = true;
     messageField.disabled = true;
@@ -46,9 +49,9 @@ export class ContactComponent {
         body: formDATA
       }
     )
-    document.getElementById('success')?.classList.remove('d-none');
+    popupClass.classList.remove('d-none');
     setTimeout(() => {
-      document.getElementById('success')?.classList.add('d-none');
+      popupClass.classList.add('d-none');
     }, 5000);
   }
   public loginForm: FormGroup = new FormGroup({
