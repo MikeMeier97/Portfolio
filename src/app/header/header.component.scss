@@ -19,7 +19,11 @@
 .headBubble {
   position: absolute;
   top: 0;
-  left: 0px;
+  left: 0;
+  opacity: 0;
+  animation-name: mainBubble-Animation;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
   z-index: 0;
   width: 800px;
 }
@@ -28,6 +32,8 @@
   display: flex;
   justify-content: space-between;
   z-index: 1;
+  animation-name: header-animation;
+  animation-duration: 5s;
   margin-left: 5vw;
   margin-right: 5vw;
 }
@@ -55,6 +61,10 @@ nav {
 .headTitle {
   position: relative;
   left: 50vw;
+  animation-name: mainText-Animation;
+  animation-duration: 2.5s;
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
   top: 15%;
   h3 {
     font-family: "Montserrat", sans-serif;
@@ -75,6 +85,9 @@ nav {
   bottom: 0;
   margin-left: 8vw;
   width: auto;
+  animation-name: opacity-Animation;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
   height: auto;
   max-width: 65vh;
 }
@@ -105,6 +118,14 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  img {
+    animation-name: scroll-animation;
+    animation-duration: 3s;
+  }
+  p{
+    animation-name: opacity-Animation;
+    animation-duration: 4s;
+  }
 }
 .headIcons {
   display: flex;
@@ -125,6 +146,89 @@ nav {
 
 .pointer:hover {
   cursor: pointer;
+}
+
+
+@keyframes header-animation {
+  0% {
+    transform: translateY(-300px);
+  }
+  80% {
+    transform: translateY(-300px);
+  }
+  95% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes scroll-animation {
+  0% {
+    transform: scale(0);
+  }
+  60% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1); 
+  }
+}
+
+@keyframes opacity-Animation {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes mainBubble-Animation {
+  0% {
+    opacity: 0;
+    transform: translate(-1500px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0px);   
+    opacity: 1;
+  }
+}
+
+
+
+@keyframes mainText-Animation {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 100%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 100%);
+  }
+  30% {
+    transform: translateY(-50px);
+    opacity: 0;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 100%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 100%);
+  }
+  70% {
+    transform: translateY(-50px);
+    opacity: 0;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 100%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 100%);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0%);
+  }
 }
 
 @keyframes side-icons-animation-in {

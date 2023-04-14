@@ -70,6 +70,9 @@ button {
   position: absolute;
   width: 160px;
   height: 160px;
+  animation-name: minibubble-Animation;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
   top: calc(100vh - 80px);
   z-index: 1;
 }
@@ -86,7 +89,23 @@ button {
   top: 104vh;
   left: 70vw;
 }
-
+@keyframes minibubble-Animation {
+  0% {
+    transform: scale(0);
+  }
+  30% {
+    transform: scale(0);
+  }
+  60% {
+    transform: scale(0);
+  }
+  90% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 @keyframes hover-animation-in {
   0% {
     transform: scale(1);
